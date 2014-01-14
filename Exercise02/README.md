@@ -90,6 +90,7 @@ Calculator uses the following interface:
 
 
 A sample session of the calculator looks like this:
+
     Meringue:math chriszf$ python calculator.pyc
     > + 1 2
     3
