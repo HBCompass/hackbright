@@ -138,10 +138,53 @@ In short, remember this pattern:
 
 As you write the code for the functions in arithmetic.py, test one and then commit the change to git before moving on to the next one.  It may seem a little like overkill at this point since these functions are so small, but this is a habit you'll want to start practising.
 
+Complete this exercise before moving onto the next section.
+
 ## Share and Share Alike
 
-git is great and all, but so far everything you've saved has only been saved on the computer you've been working on.  If you move to another workstation or want to work on your computer at home, the files are not there.
+git is great and all, but so far everything you've commited has only been saved on the computer you've been working on.  If you move to another workstation or want to work on your computer at home, the files are not there.
 
-Enter "[github]("http://github.com")" to save the day!
+Enter "[github](http://github.com)" to save the day!
 
-Github is a company that offers a remote place to syncronize your repository.  This makes it easy to keep multiple machines up to date
+Github is a company that offers a remote place to syncronize your repository.  This makes it easy to keep multiple machines up to date.  As you've already seen, you don't need github to use git, but it does make things easier.
+
+If you have not yet created a github account, make sure you and your partner have done that now.
+
+Log into your github account and find the "Create Repository" button to create a place in github.  Under "Repository Name", enter Exercise02 (or whatever you'd like call it, but note this affects the URL). The description is optional. Leave it set to Public, because Private repositories cost money. Don't check "initialize this repository with a README" because you've already initialized the repository on your local machine with "git init".  Click "Create Repository".
+
+You'll see a screen that says "Quick Setup" - click the HTTP button (next to where it says "SSH"). You'll see an address that says something like https://github.com/[username]/Exercise02.git - copy this url. This is the address of the remote (because it's on a different server) git repository we're going to add to our local repository.
+
+Now you want to tell your local git repository about this new remote source.  When you add the remote source, you also give it an identifiable name that you use to refer to it.  Usually you would use the name "origin" as that's the default name.  However, because you're pairing with another student to work on these exercises, you'll be adding two remotes to each of your projects, so it makes more sense to use your username (no spaces!) to identify the remotes.  To add the remote to your repository:
+
+    git remote add [your username goes here] https://github.com/[your username goes here]/Exercise02.git
+
+When we add a remote, much like when we do any other configuration, it only exists for that repository. Outside of the folder our repository is in, none of these settings exist. 
+
+Now we have a remote - this is like a portal that goes to whatever URL we point at.  So, now that we've established a portal link, what do we do with it? Same thing you'd probably do if you actually opened a portal to the server room at Github. Push things through it and see what happens.
+
+    git push [remote name] master
+
+Replace [remote name] (no square brackets) with the name you used when you added the remote.  You might wonder about what "master" means - that's the name of the branch. For now, we'll have only one branch, so we'll always type master there. In the Further Reading section, there's some information about branching.
+
+Once you've typed the "git push" command, git will ask you for a username - this is the username you signed up with github under. Then, it will ask for a password. When you type, you may be used to seeing asterisks(*) appear, but nothing will show up instead of just displaying your password for the world to see - so don't worry about typing it in in front of your partner.
+
+After this, head over to your Github profile. You should see your new repo has been created, and any files you've added should have been pushed to the server. This is the simplest way to back up your work to the cloud, share code between teams, and make sure you remember what you did, when you did it, with notes to yourself.
+
+Now repeat this for your partner so both of you have the code for the exercise saved in your github accounts.
+
+If you're comfortable with that, try going back and adding the remotes to Exercise 01.
+
+
+Further Reading
+========
+
+http://try.github.com
+
+Information about Branching  
+http://pcottle.github.com/learnGitBranching/  
+
+Here's a very through overview of Git and how it works.  
+http://ftp.newartisans.com/pub/git.from.bottom.up.pdf  
+
+Even more through, is this book:  
+http://git-scm.com/book/en  
