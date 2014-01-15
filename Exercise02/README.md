@@ -54,7 +54,13 @@ Concepts required:
 
 Description
 -------
-We have provided a program, calculator.pyc that implements a basic prefix calculator. A pyc is a special python file. You can still run the program, but you can't view the original source of the program. Run it with the following command from your shell:
+We have provided a program, calculator.pyc that implements a basic prefix calculator.  To download the file from github, click on the file, then click on "Raw" to download the file (the browser may place it in your Downloads folder).
+
+A pyc is a special python file.  It's python code that has been "compiled" into machine code. You can still run the program, but you can't view the original source of the program.  If you try and look at the file on your terminal (e.g. "cat calculator.pyc") you probably get a bunch of gross garbage outputted.  That's okay, because the computer still knows how to run it.
+
+As you create and run more python programs, you may notice .pyc files get created.  That's fine, they're making things run faster.  However they're not your source code and you probably don't want to check them into version control (git).
+
+Run it with the following command from your shell:
 
     python calculator.pyc
 
@@ -116,3 +122,26 @@ We have provided a sample arithmetic.py with a function that matches the signatu
 Try running the program first to understand where and how it fails. Read the error messages, and try to fix it by addressing one error at a time.
 
 
+Version Control
+-------
+Just like in [Exercise 01](https://github.com/hackbrightacademy/Hackbright-Curriculum/tree/master/Exercise01) we want to make sure we're saving our work along the way.  Start getting used to creating a new git repo, we'll be doing it for each Exercise we do.
+
+In short, remember this pattern:
+
+1. Create a new directory for your project
+2. Run 'git init' to create the git repository
+3. Write some code
+4. Test some code
+5. Got something working / at a good place to save?  'git add' to add your changes.
+6. 'git commit' to save what you've added.  Nothing is saved until you commit
+7. Goto Step 3
+
+As you write the code for the functions in arithmetic.py, test one and then commit the change to git before moving on to the next one.  It may seem a little like overkill at this point since these functions are so small, but this is a habit you'll want to start practising.
+
+## Share and Share Alike
+
+git is great and all, but so far everything you've saved has only been saved on the computer you've been working on.  If you move to another workstation or want to work on your computer at home, the files are not there.
+
+Enter "[github]("http://github.com")" to save the day!
+
+Github is a company that offers a remote place to syncronize your repository.  This makes it easy to keep multiple machines up to date
