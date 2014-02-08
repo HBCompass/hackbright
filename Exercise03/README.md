@@ -4,13 +4,13 @@ Exercise 03: Interfaces, main loops revisited
 Introduction
 --------
 As we saw before, a main loop looks like this:
-
-    do_setup()
-    while exit_condition_not_reached:
-        input = consume_input()
-        output = evaluate_input(input)
-        print output
-
+```python
+do_setup()
+while exit_condition_not_reached:
+    input = consume_input()
+    output = evaluate_input(input)
+    print output
+```
 When we consume input from the keyboard, this is a special type of main loop called a 'REPL', a read-eval-print-loop.
 
 In exercise 1, we built a very simple REPL that asked for a single number from the user.
@@ -35,14 +35,14 @@ To do this, we use the string split method:
 When we do this, we say we've tokenized the original string on commas.
 
 Now consider the following string as read from the keyboard:
-
-    input = "pow 3 5"
-
+```python
+input = "pow 3 5"
+```
 If we tokenize on spaces, we get the following list:
-
-    tokens = input.split(" ")
-    # tokens = ["pow", "3", "5"]
-
+```python
+tokens = input.split(" ")
+# tokens = ["pow", "3", "5"]
+```
 Now, we can take the first token, token[0], and make a decision about what to do with the remaining tokens. For example:
 
     if tokens[0] is equal to "pow":
@@ -60,23 +60,23 @@ The psuedocode for our REPL will look like this:
 
 Resources:
 
-    * http://learnpythonthehardway.org/book/ex3.html
-    * http://learnpythonthehardway.org/book/ex18.html
-    * http://learnpythonthehardway.org/book/ex19.html
-    * http://learnpythonthehardway.org/book/ex21.html
-    * http://learnpythonthehardway.org/book/ex29.html
-    * http://learnpythonthehardway.org/book/ex30.html
-    * http://learnpythonthehardway.org/book/ex31.html
-    * http://www.learnpython.org/en/Variables_and_Types
-    * http://www.learnpython.org/en/Functions
-    * http://docs.python.org/library/functions.html#int
+* http://learnpythonthehardway.org/book/ex3.html
+* http://learnpythonthehardway.org/book/ex18.html
+* http://learnpythonthehardway.org/book/ex19.html
+* http://learnpythonthehardway.org/book/ex21.html
+* http://learnpythonthehardway.org/book/ex29.html
+* http://learnpythonthehardway.org/book/ex30.html
+* http://learnpythonthehardway.org/book/ex31.html
+* http://www.learnpython.org/en/Variables_and_Types
+* http://www.learnpython.org/en/Functions
+* http://docs.python.org/library/functions.html#int
 
 Concepts required:
-    * functions
-    * arithmetic
-    * return values
-    * string parsing
-    * conditionals
+* functions
+* arithmetic
+* return values
+* string parsing
+* conditionals
 
 Description
 -------
@@ -110,25 +110,26 @@ Implement a REPL for a calculator in a file named 'calculator.py'. Your calculat
 
 
 A sample session of the calculator looks like this:
-    Meringue:math chriszf$ python calculator.py
-    > + 1 2
-    3
-    > - 10 5
-    5
-    > * 2 3
-    6
-    > / 6 2
-    3.000000
-    > square 2
-    4
-    > cube 3
-    27
-    > pow 2 5
-    32
-    > mod 10 3
-    1
-    > q
-    Meringue:math chriszf$
-
+```    
+Meringue:math chriszf$ python calculator.py
+> + 1 2
+3
+> - 10 5
+5
+> * 2 3
+6
+> / 6 2
+3.000000
+> square 2
+4
+> cube 3
+27
+> pow 2 5
+32
+> mod 10 3
+1
+> q
+Meringue:math chriszf$
+```
 We have provided a sample arithmetic.py with dummy stubs that do the wrong thing. When you've completed your REPL, copy your completed arithmetic.py from the previous exercise to the current directory and replace our stubs.
 
