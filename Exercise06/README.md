@@ -32,7 +32,7 @@ and value elements of each dictionary entry in turn.
 
 Resources:
 * http://learnpythonthehardway.org/book/ex39.html
-* http://www.learnpython.org/Dictionaries
+* http://www.learnpython.org/en/Dictionaries
 * http://docs.python.org/library/stdtypes.html#string-methods
 * http://docs.python.org/library/stdtypes.html#mapping-types-dict
 
