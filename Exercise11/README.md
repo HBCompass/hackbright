@@ -50,7 +50,7 @@ Description
 Go through the exercises on [RegexOne](http://RegexOne.com). It will sometimes let you pass without actually satisfying the conditions, so make sure you're as thorough as possible.
 
 If you complete them all, write regular expressions to find the following
-patterns. Use egrep on the included word file.
+patterns. Use egrep on the included word file.  Pipe your output (using |) to the 'wc' command to get a line count.
 
     From the file 'words'
     1. All the words that begin with the letter a, independent of case (17096 words)
