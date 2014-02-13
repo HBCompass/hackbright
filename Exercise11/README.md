@@ -47,7 +47,7 @@ email addresses in an html file.
 
 Description
 -------
-Go through the exercises on [RegexOne](RegexOne.com). It will sometimes let you pass without actually satisfying the conditions, so make sure you're as thorough as possible.
+Go through the exercises on [RegexOne](http://RegexOne.com). It will sometimes let you pass without actually satisfying the conditions, so make sure you're as thorough as possible.
 
 If you complete them all, write regular expressions to find the following
 patterns. Use egrep on the included word file.
