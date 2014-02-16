@@ -68,11 +68,15 @@ class TestRecursionOperations(unittest.TestCase):
         self.assertFalse(palindrome("abcdecba"))
 
     def test_fold_paper(self):
-        self.assertEqual(fold_paper(10, 10, 1), (10/2, 10/2))
-        self.assertEqual(fold_paper(10, 10, 2), (10/2/2, 10/2/2))
-        self.assertEqual(fold_paper(10, 10, 3), (10/2/2/2, 10/2/2/2))
-        self.assertEqual(fold_paper(10, 10, 4), (10/2/2/2/2, 10/2/2/2/2))
-        self.assertEqual(fold_paper(10, 10, 5), (10/2/2/2/2/2, 10/2/2/2/2/2))
+        self.assertEqual(fold_paper(8.5, 11, 1), (8.5, 11.0/2))
+        self.assertEqual(fold_paper(8.5, 11, 2), (8.5/2, 11.0/2))
+        self.assertEqual(fold_paper(8.5, 11, 3), (8.5/2, 11.0/2/2))
+        self.assertEqual(fold_paper(8.5, 11, 4), (8.5/2/2, 11.0/2/2))
+        self.assertEqual(fold_paper(8.5, 11, 5), (8.5/2/2, 11.0/2/2/2))
+
+        self.assertEqual(fold_paper(10, 10, 2), (10.0/2, 10.0/2))
+        self.assertEqual(fold_paper(10, 10, 4), (10.0/2/2, 10.0/2/2))
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -59,7 +59,9 @@ def find(l, i):
 def palindrome(some_string):
     return False
 
-# Given the width and height of a sheet of paper, and the number of times to fold it, return the final dimensions of the sheet as a tuple. Assume that you always fold in half along the longest edge of the sheet.
+# Given the width and height of a sheet of paper, and the number of times to fold it,
+# return the final dimensions of the sheet as a tuple. 
+# NOTE: Assume that you always fold in half along the longest edge of the sheet.
 def fold_paper(width, height, folds):
     return (0, 0)
 
