@@ -36,9 +36,9 @@ class TestRecursionOperations(unittest.TestCase):
         self.assertEqual(sum_list(self.numbers2), sum(self.numbers2))
 
     def test_reverse_list(self):
-        self.assertEqual(reverse(self.numbers1), self.numbers1[-1])
-        self.assertEqual(reverse(self.numbers2), self.numbers2[-1])
-        self.assertEqual(reverse(self.months), self.months[-1])
+        self.assertEqual(reverse(self.numbers1), self.numbers1[::-1])
+        self.assertEqual(reverse(self.numbers2), self.numbers2[::-1])
+        self.assertEqual(reverse(self.months), self.months[::-1])
 
     def test_fibonacci(self):
         self.assertEqual(fibonacci(1), 1)
