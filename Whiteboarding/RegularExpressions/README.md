@@ -1,4 +1,4 @@
-Exercise 11: Regular Expressions: ain't nothing regular about them
+Regular Expressions: ain't nothing regular about them
 =======
 
 Introduction

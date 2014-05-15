@@ -1,4 +1,4 @@
-Exercise 9: Recursion
+Whiteboarding Practice: Recursion
 =======
 
 Introduction

@@ -1,5 +1,5 @@
 """
-Exercise 9: Recursion
+Recursion
 ---------------------
 
 The Evil Wizard Malloc has attacked you and taken away your ability
