@@ -93,7 +93,7 @@ Version Control (git)
 -------
 While you're writing your code, try and remember to use 'git' at various points to save your progress.  If you've never used version control before, it's a lot like enabling "Track Changes" in a Microsoft Word document.  Every time you "commit" your code, you're saving a snapshot in time.  If you make a change you don't like or mess something up, you can rollback to a previous commit.
 
-For those of you who play adventure games, the moto "Save Early, Save Often" should come to mind.
+For those of you who play adventure games, the motto "Save Early, Save Often" should come to mind.
 
 So if you take the rough pseudocode outline from above, you'll probably want to go about creating your program in the following order:
 
