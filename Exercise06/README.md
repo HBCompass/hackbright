@@ -1,8 +1,10 @@
 Exercise 06: Files and dictionaries
 =======
 
-Introduction
---------
+##Dictionaries
+
+###What is a dictionary?
+
 Imagine a list as being a numbered sequence of data.
 ```python
 fish = ["shark", "ray", "halibut", "tuna", "squid"]
@@ -29,8 +31,9 @@ We would then need another way of specifying a list where each element is named.
 fish = {"deep ocean": "anglerfish", "amazon river": "candiru", "lake": "bass", "shallow river": "trout"}
 ```
 
-This is called a dictionary in python. It's also called a hashtable, or a hashmap, or very non-specifically, a map. A dictionary is a collection of 'key-value pairs'. The key 'deep ocean' _maps_ to the value 'anglerfish'.
+This is called a dictionary in python. It's also called a hashtable, or a hashmap, or very non-specifically, a map. __A dictionary is a collection of 'key-value pairs'__. The key 'deep ocean' _maps_ to the value 'anglerfish'.
 
+###Why Use a dictionary?
 Imagine you were writing a program to keep track of user scores in a game. If you only had arrays, you might do something like this:
 ```
 names  = ["Bob", "Joe", "Jack", "Jane"]
@@ -50,6 +53,9 @@ scores = {"Bob": 10, "Joe": 3, "Jack": 6, "Jane": 15}
 print "Joe's score is %d" % (scores['Joe'])
 => Joe's score is 3 
 ```
+
+###Some useful methods:
+####get()
 Dictionaries have a method called 'get' which allows you to have a default value in case a key does not exist beforehand.
 ```
 scores = {"Bob": 10, "Joe": 3, "Jack": 6, "Jane": 15}
@@ -60,14 +66,58 @@ print scores.get("Bob", 0) # The second argument is the fallback number if the k
 print scores.get("Billy", 0) # Billy doesn't exist in the dictionary, so return the fallback instead
 => 0
 ```
-Resources:
+
+####iteritems()
+Dictionaries can also be iterated entry-by-entry, using the method ```iteritems()```.
+
+For example:
+```python
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+for key, value in my_dict.iteritems():
+    print "Key == %r, value == %r" % (key, value)
+```
+Prints:
+```
+Key == 'a', value == 1
+Key == 'b', value == 2
+Key == 'c', value == 3
+```
+This introduces two loop variables, 'key' and 'value', that will store the key
+and value elements of each dictionary entry in turn.
+
+
+###Dictionary Resources:
+* http://learnpythonthehardway.org/book/ex39.html
+* http://docs.python.org/tutorial/datastructures.html#dictionaries
+* http://www.learnpython.org/en/Dictionaries
+* http://docs.python.org/library/stdtypes.html#mapping-types-dict
+
+
+
+
+##File Parsing
+
+###Read lines from a file
+In exercise 5 you read a file and processed one character at a time. Files can also be iterated line-by-line, using a for loop on the file directly.
+
+For example:
+```python
+twain = open('twain.txt')
+for line in twain:
+    # Do something
+```
+The loop variable ```line``` will store each line of the file in turn.
+
+### File manipulation Resources (and sometimes strings):
 * http://learnpythonthehardway.org/book/ex15.html
 * http://learnpythonthehardway.org/book/ex16.html
 * http://learnpythonthehardway.org/book/ex17.html
 * http://docs.python.org/tutorial/inputoutput.html#methods-of-file-objects
-* http://learnpythonthehardway.org/book/ex39.html
-* http://docs.python.org/tutorial/datastructures.html#dictionaries
+* http://docs.python.org/library/stdtypes.html#string-methods
 * http://stackoverflow.com/a/3437070
+
+
+
 
 
 Description
