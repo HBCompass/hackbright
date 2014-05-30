@@ -3,38 +3,15 @@ Exercise 7: Files and dicts
 
 Introduction
 ------------
-Files can also be iterated line-by-line, using a for loop on the file directly.
+All of the material you need to complete this exercise has been covered previously, especially in [exercise 6](https://github.com/hackbrightacademy/Hackbright-Curriculum/tree/master/Exercise06).
 
-For example:
+As a further hint, you may find the following methods useful:
 ```python
-twain = open('twain.txt')
-for line in twain:
-    # Do something
+string.split()
+string.strip()
+dict.get()
+dict.iteritems()
 ```
-The loop variable ```line``` will store each line of the file in turn.
-
-Dictionaries can also be iterated entry-by-entry, using the method ```iteritems()```.
-
-For example:
-```python
-my_dict = {'a': 1, 'b': 2, 'c': 3}
-for key, value in my_dict.iteritems():
-    print "Key == %r, value == %r" % (key, value)
-```
-Prints:
-```
-Key == 'a', value == 1
-Key == 'b', value == 2
-Key == 'c', value == 3
-```
-This introduces two loop variables, 'key' and 'value', that will store the key
-and value elements of each dictionary entry in turn.
-
-Resources:
-* http://learnpythonthehardway.org/book/ex39.html
-* http://www.learnpython.org/en/Dictionaries
-* http://docs.python.org/library/stdtypes.html#string-methods
-* http://docs.python.org/library/stdtypes.html#mapping-types-dict
 
 Problem Description
 -------------------
@@ -87,13 +64,7 @@ wives. 1
 were 1
 cats 1
 ```
-You may find the following methods useful:
-```python
-string.split()
-string.strip()
-dict.get()
-dict.iteritems()
-```
+
 We have provided a file 'twain.txt' for you to test your code on.
 
 Extra Credit
