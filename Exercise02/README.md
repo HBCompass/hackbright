@@ -37,7 +37,7 @@ Why is this useful? Well, when two or more programmers collaborate on a project,
 One way of thinking about it is like after-market parts for cars. As long as the screws and holes are in the right positions at the right sizes, the pieces can be bolted together even though they come from different manufacturers.
 
 
-Resources:
+Do These first:
 
 * http://learnpythonthehardway.org/book/ex3.html
 * http://learnpythonthehardway.org/book/ex18.html
