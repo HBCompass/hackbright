@@ -58,7 +58,7 @@ The psuedocode for our REPL will look like this:
         otherwise decide which math function to call based on the tokens we read
 
 
-##### Resources:
+##### Do These First:
 
 * http://learnpythonthehardway.org/book/ex3.html
 * http://learnpythonthehardway.org/book/ex18.html
