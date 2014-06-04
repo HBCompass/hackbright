@@ -71,7 +71,7 @@ The psuedocode for our REPL will look like this:
 * http://www.learnpython.org/en/Functions
 * http://docs.python.org/library/functions.html#int
 
-###### Concepts required:
+##### Concepts required:
 * functions
 * arithmetic
 * return values
