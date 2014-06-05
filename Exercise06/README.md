@@ -86,7 +86,7 @@ This introduces two loop variables, 'key' and 'value', that will store the key
 and value elements of each dictionary entry in turn.
 
 
-###Dictionary Resources:
+###Dictionary Exercises:
 * http://learnpythonthehardway.org/book/ex39.html
 * http://docs.python.org/tutorial/datastructures.html#dictionaries
 * http://www.learnpython.org/en/Dictionaries
@@ -108,7 +108,7 @@ for line in twain:
 ```
 The loop variable ```line``` will store each line of the file in turn.
 
-### File manipulation Resources (and sometimes strings):
+### File manipulation Exercises (and sometimes strings):
 * http://learnpythonthehardway.org/book/ex15.html
 * http://learnpythonthehardway.org/book/ex16.html
 * http://learnpythonthehardway.org/book/ex17.html
