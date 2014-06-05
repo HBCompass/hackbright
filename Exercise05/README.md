@@ -21,15 +21,14 @@ Once a file has been read, it can be iterated through as if it were a list:
     for char in filetext:
         print char
 ```
-Resources:
-
+##### Do These First:
 * http://learnpythonthehardway.org/book/ex15.html
 * http://learnpythonthehardway.org/book/ex16.html
 * http://learnpythonthehardway.org/book/ex17.html
 * http://www.asciitable.com/
 * http://docs.python.org/library/functions.html#ord
 
-Useful Concepts:
+##### Useful Concepts:
 * string.lower()
 * ord()
 
