@@ -87,7 +87,7 @@ Part 2: Derived operations on lists
 -----------------------------------
 
 In this section you will implement your own versions of the standard list methods.
-You should use only the primitive operations from Part 1 in your implementations.
+You should use only the primitive operations from Part 1 and 2 in your implementations.
 For loops are also allowed, such as the following:
     for element in some_list:
         # Do something with element
