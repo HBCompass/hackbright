@@ -47,6 +47,8 @@ Write a program, lettercount.py, that opens a file named on the command line and
     0
     ...
 
+Note: you may not use dictionaries in your program for this exercise.
+
 Once you've produced appropriate output, you can visualize it by piping the contents of your program to the 'spark' utility installed on your computer:
 
     $ python lettercount.py inputfile.txt | spark
