@@ -86,7 +86,7 @@ This introduces two loop variables, 'key' and 'value', that will store the key
 and value elements of each dictionary entry in turn.
 
 
-###Dictionary Exercises:
+###Dictionary Exercises (do these first):
 * http://learnpythonthehardway.org/book/ex39.html
 * http://docs.python.org/tutorial/datastructures.html#dictionaries
 * http://www.learnpython.org/en/Dictionaries
