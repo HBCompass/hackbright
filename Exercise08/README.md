@@ -103,4 +103,4 @@ Do any of the following
 
 1. See what happens when you mix two different authors together as a single source
 2. Modify the program to allow any number of words to use as keys, ie: choose the size of your n-gram used in your chain
-3. Create a new Twitter persona and wire up your markov program with the twitter module (import twitter) to produce random tweets. (docs are [here](https://code.google.com/p/python-twitter/)). The twitter module is already installed on the lab machines.
+3. Create a new Twitter persona and wire up your markov program with the twitter module (import twitter) to produce random tweets. (docs are [here](https://code.google.com/p/python-twitter/)). The twitter module is already installed on the lab machines. NOTE: Do not publish your Twitter API credentials to GitHub! Create a file with your credentials and then make Git ignore it with .gitignore 
