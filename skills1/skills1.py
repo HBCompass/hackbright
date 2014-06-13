@@ -30,11 +30,11 @@ def word_lengths(word_list):
 
 # Write a function (using iteration) that sums all the numbers in a list.
 def sum_numbers(numbers):
-    return []
+    return 0
 
 # Write a function that multiplies all the numbers in a list together.
 def mult_numbers(numbers):
-    return []
+    return 0
 
 # Write a function that joins all the strings in a list together (without using the join method) and returns a single string.
 def join_strings(string_list):
@@ -42,4 +42,4 @@ def join_strings(string_list):
 
 # Write a function that takes a list of integers and returns the average (without using the avg method)
 def average(numbers):
-    return None
+    return 0
