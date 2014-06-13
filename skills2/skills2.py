@@ -48,7 +48,7 @@ def word_length(words):
     pass
 
 """
-Here’s a table of English to Pirate translations
+Here's a table of English to Pirate translations
 English     Pirate
 
 sir         matey
@@ -63,7 +63,7 @@ excuse      arr
 students    swabbies
 are         be
 lawyer      foul blaggart
-the         th’
+the         th'
 restroom    head
 my          me
 hello       avast
