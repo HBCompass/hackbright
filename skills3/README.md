@@ -16,10 +16,12 @@ Now, we can harness the power of databases to do things the "right" way!  Update
 Some hints to get you started:
 
 * The database relationships are:
-** customers have orders
-** orders have order_items (An order may be for more than one type of melon)
+ * customers have orders
+ * orders have order_items (An order may be for more than one type of melon)
 
 * Start by writing the query to just return one customer record, then expand it to filter for only the customers who have ordered over 20 melons.
+
+* Have your get_next_customer() function return the customer data as an instance of the Customer class.
 
 * The database does not currently have a field to track the last time a customer was called.  You'll have to add it.
 
