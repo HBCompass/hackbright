@@ -3,13 +3,13 @@ Skills 3: Telemarketer Script Revisited
 
 Introduction
 --------
-If you recall from (Homework 7)[https://github.com/hackbrightacademy/Homework/tree/master/Homework07], our marketing department is running a new promotion this week for
+If you recall from [Homework 7](https://github.com/hackbrightacademy/Homework/tree/master/Homework07), our marketing department is running a new promotion this week for
 all customers who have placed an order for over 20 Watermelons.
 
 They want to make sure all eligible customers know about it, so
 they've asked the Telemarketing Department to start placing calls.
 
-In (Homework 7)[https://github.com/hackbrightacademy/Homework/tree/master/Homework07], the 'call.py' script used a pair of .csv files to get the data on the customers and the orders.
+In [Homework 7](https://github.com/hackbrightacademy/Homework/tree/master/Homework07), the 'call.py' script used a pair of .csv files to get the data on the customers and the orders.
 
 Now, we can harness the power of databases to do things the "right" way!  Update the 'call.py' script.  Some functions have been placed in the script to give you a general idea of the flow we are looking for.
 
