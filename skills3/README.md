@@ -3,7 +3,7 @@ Skills 3: Telemarketer Script Revisited
 
 Introduction
 --------
-If you recall from [Homework 7](https://github.com/hackbrightacademy/Homework/tree/master/Homework07), our marketing department is running a new promotion this week for
+If you recall from [Homework 7](https://github.com/hackbrightacademy/Homework/tree/master/Homework07), our marketing department is running a promotion for
 all customers who have placed an order for over 20 Watermelons.
 
 They want to make sure all eligible customers know about it, so
