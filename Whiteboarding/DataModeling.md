@@ -5,7 +5,7 @@ Introduction
 ------
 In the Movie, "The Dark Crystal", the evil Skeksis are able to restore their youth by draining and consuming the essense from other beings.  They've driven the Gelfling race to the brink of extinction (only two remain), however there are still plenty of Podlings that can be rounded up.
 
-The Skeksis consume the essense of a lot of Podlings.  They're also a greedy race, so there are constant fights over who has consumed the most essense.  The chief prison warden of the Skeksis has request you build him a database to help him keep track of everything.
+The Skeksis consume the essense of a lot of Podlings.  They're also a greedy race, so there are constant fights over who has consumed the most essense.  The chief prison warden of the Skeksis has requested you build him a database to help him keep track of everything.
 
 
 Requirements
@@ -23,10 +23,10 @@ Here's what you know:
  * Location (which cage are they in)
 
 * Skeksis regularly visit the processing facility to consume essense.  Need to keep track of:
-** Which Skeksis consumed essense
-** When the essense was consumed
-** From which prisoner the essense was consumed
-** How much essense was consumed
+ * Which Skeksis consumed essense
+ * When the essense was consumed
+ * From which prisoner the essense was consumed
+ * How much essense was consumed
 
 Data Model
 ------
