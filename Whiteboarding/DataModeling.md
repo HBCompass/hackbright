@@ -3,7 +3,7 @@ Data Modeling: The Dark Crystal
 
 Introduction
 ------
-In the Movie, "The Dark Crystal", the evil Skeksis are able to restore their youth by draining and consuming the essense from other beings.  They've driven the Gelfling race to the brink of extinction (only two remain), however there are still plenty of Podlings that can be rounded up.
+In the Movie, ["The Dark Crystal"](http://en.wikipedia.org/wiki/The_Dark_Crystal), the evil Skeksis are able to restore their youth by draining and consuming the essense from other beings.  They've driven the Gelfling race to the brink of extinction (only two remain), however there are still plenty of Podlings that can be rounded up.
 
 The Skeksis consume the essense of a lot of Podlings.  They're also a greedy race, so there are constant fights over who has consumed the most essense.  The chief prison warden of the Skeksis has requested you build him a database to help him keep track of everything.
 
