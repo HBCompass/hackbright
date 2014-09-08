@@ -12,6 +12,8 @@ Take a look at these online resources before you attempt this exercise. If you g
 * http://learnpythonthehardway.org/book/ex30.html
 * http://learnpythonthehardway.org/book/ex31.html
 * http://learnpythonthehardway.org/book/ex33.html
+* http://learnpython.org/en/Loops
+* https://docs.python.org/2/library/functions.html#int
 
 Concepts required:
 * while loops
@@ -52,7 +54,7 @@ Description
 Write a program named guess.py that plays the 'number guessing game'. The computer will choose a random number between 1 and 100, and ask the user to guess the number, giving them a hint if it's high or low. A sample game looks like this:
 
 ```
-Meringue:guessing chriszf$ python ./guess.py 
+Meringue:guessing chriszf$ python ./guess.py
 Howdy, what's your name?
 (type in your name) Christian
 Christian, I'm thinking of a number between 1 and 100. Try to guess my number.
@@ -88,7 +90,7 @@ A rough pseudocode outline of the program will look like this:
         else:
             congratulate player
 
-            
+
 Version Control (git)
 -------
 While you're writing your code, try and remember to use 'git' at various points to save your progress.  If you've never used version control before, it's a lot like enabling "Track Changes" in a Microsoft Word document.  Every time you "commit" your code, you're saving a snapshot in time.  If you make a change you don't like or mess something up, you can rollback to a previous commit.
@@ -117,7 +119,7 @@ So if you take the rough pseudocode outline from above, you'll probably want to 
   1. git commit -m "Getting the Player's Name"
   1. git status
 1. Sensing a pattern yet?  Repeat for the next steps, testing your code at each step.  When you have a step working, save it!
- 
+
 As you get more comfortable with git, you won't need to do a 'git status' at every step.  We're only having you do that here so you can see what is happening at each step and get used to the messages that git returns.
 
 ## Go Back!
@@ -129,4 +131,3 @@ So if you're code is broken or you explored an idea that didn't turn out the way
     git reset --hard HEAD
 
 *WARNING:* This will erase any changes you have not committed, so please use with care!
-
