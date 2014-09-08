@@ -3,25 +3,25 @@ Project 1: Looping, file manipulation, panic
 
 Introduction
 -------
-This exercise is difficult and should take several days. 
+This exercise is difficult and should take several days.
 
 Resources:
-    * http://learnpythonthehardway.org/book/ex32.html
-    * http://learnpythonthehardway.org/book/ex34.html
-    * http://www.learnpython.org/Lists
-    * http://www.learnpython.org/Loops
-    * http://www.learnpython.org/Basic_String_Operations
-    * http://docs.python.org/library/os.html#os.listdir
-    * http://docs.python.org/library/os.html#os.chdir
-    * http://docs.python.org/library/os.path.html#os.path.exists
-    * http://docs.python.org/library/shutil.html#shutil.move
+* http://learnpythonthehardway.org/book/ex32.html
+* http://learnpythonthehardway.org/book/ex34.html
+* http://www.learnpython.org/en/Lists
+* http://www.learnpython.org/en/Loops
+* http://www.learnpython.org/en/Basic_String_Operations
+* http://docs.python.org/library/os.html#os.listdir
+* http://docs.python.org/library/os.html#os.chdir
+* http://docs.python.org/library/os.path.html#os.path.exists
+* http://docs.python.org/library/shutil.html#shutil.move
 
 Concepts required:
-    * for loops
-    * conditionals
-    * lists
-    * paths
-    * substrings
+* for loops
+* conditionals
+* lists
+* paths
+* substrings
 
 Description
 -------
@@ -40,5 +40,3 @@ Your job is to write a program, ex1.py, that does the following things:
 ### Example:
     The file named 'artichoke.txt' would go into the directory 'a',
     'bartholomew.txt' would go into 'b'.
-
-
