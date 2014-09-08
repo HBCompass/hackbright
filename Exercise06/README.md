@@ -51,7 +51,7 @@ scores = {"Bob": 10, "Joe": 3, "Jack": 6, "Jane": 15}
 ```
 ```
 print "Joe's score is %d" % (scores['Joe'])
-=> Joe's score is 3 
+=> Joe's score is 3
 ```
 
 ###Some useful methods:
@@ -87,7 +87,7 @@ and value elements of each dictionary entry in turn.
 
 
 ###Dictionary Exercises (do these first):
-* http://learnpythonthehardway.org/book/ex39.html (Stop at "Making Your Own Dictionary Functions")
+* http://learnpythonthehardway.org/book/ex39.html (Stop at "Making Your Own Dictionary Modules")
 * http://docs.python.org/tutorial/datastructures.html#dictionaries
 * http://www.learnpython.org/en/Dictionaries
 * http://docs.python.org/library/stdtypes.html#mapping-types-dict
@@ -130,7 +130,7 @@ Your job is to write a program named ```'sorted_data.py'``` reads the file, then
 
 Sample output:
 ```
-Meringue:Exercise07 chriszf$ python sorted_data.py 
+Meringue:Exercise07 chriszf$ python sorted_data.py
 Restaurant 'Andalu' is rated at 3.
 Restaurant "Arinell's" is rated at 4.
 Restaurant 'Bay Blend Coffee and Tea' is rated at 3.
