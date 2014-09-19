@@ -1,7 +1,7 @@
 string1 = "I do not like green eggs and ham."
 list1 = [2, 5, 12, 6, 1, -5, 8, 5, 6, -2, 2, 27]
 list2 = [-5, 6, 4, 8, 15, 16, 23, 42, 2, 7]
-words = ["I", "do", "not", "like", "green", "eggs", "and", "ham", "I", "do", "not", "like", "them", "San", "I", "am"]
+words = ["I", "do", "not", "like", "green", "eggs", "and", "ham", "I", "do", "not", "like", "them", "Sam", "I", "am"]
 
 """
 Write a function that takes a string and produces a dictionary with
@@ -13,14 +13,14 @@ def count_unique(string1):
     pass
 
 """
-Given two lists, (without using the keyword 'in' or the method 'index')
+Given two lists, (without using the keywords 'if __ in ____' or the method 'index')
 return a list of all common items shared between both lists
 """
 def common_items(list1, list2):
     pass
 
 """
-Given two lists, (without using the keyword 'in' or the method 'index')
+Given two lists, (without using 'if __ in ____' or 'index')
 return a list of all common items shared between both lists. This time,
 use a dictionary as part of your solution.
 """
