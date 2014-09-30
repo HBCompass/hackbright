@@ -108,16 +108,16 @@ So if you take the rough pseudocode outline from above, you'll probably want to 
   1. git status
   1. git add guessing.py
   1. git status
-  1. git commit -m "Greeting the Player"
+  1. git commit -a -m "Greeting the Player"
   1. git status
+  1. git log
 1. Ok, on to the next step!  Get the player's name.
 1. Test your code!
 1. Does it work?  Time to save!
   1. git status
-  1. git add guessing.py
+  1. git commit -a -m "Getting the Player's Name"
   1. git status
-  1. git commit -m "Getting the Player's Name"
-  1. git status
+  1. git log
 1. Sensing a pattern yet?  Repeat for the next steps, testing your code at each step.  When you have a step working, save it!
 
 As you get more comfortable with git, you won't need to do a 'git status' at every step.  We're only having you do that here so you can see what is happening at each step and get used to the messages that git returns.
@@ -128,6 +128,6 @@ At some point, if you didn't make a mistake in your code, go ahead and break som
 
 So if you're code is broken or you explored an idea that didn't turn out the way you wanted it to and you just want to go back to your last commit, try:
 
-    git reset --hard HEAD
+    git reset --hard
 
-*WARNING:* This will erase any changes you have not committed, so please use with care!
+*WARNING:* This will erase any changes you have not committed to git, so please use with care!
