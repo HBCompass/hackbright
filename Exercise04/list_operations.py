@@ -83,6 +83,10 @@ def delete_middle(input_list):
     pass
 
 """
+Now would be a great time to ask for a code review.
+"""
+
+"""
 Part 2: Derived operations on lists
 -----------------------------------
 
