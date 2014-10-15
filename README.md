@@ -1,4 +1,4 @@
-![Logo](http://www.hackbrightacademy.com/assets/Hackbright-6c7b7cf9a39c92964e3fde0c682f48e8.png)
+![Logo](http://hb-website-assets-production.s3.amazonaws.com/assets/Hackbright-defd4deb316e265c983704d78e65f926.png)
 
 Hackbright Curriculum
 =====================
