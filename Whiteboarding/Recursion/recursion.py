@@ -43,10 +43,7 @@ def multiply_list(lst):
     0
     """
 
-    if not lst:
-        return 1
-
-    return lst[0] * multiply_list(lst[1:])
+    pass
 
 
 def factorial(n):
@@ -67,10 +64,7 @@ def factorial(n):
     24
     """
 
-    if n == 1:
-        return 1
-
-    return n * factorial(n - 1)
+    pass
 
 
 def count_list(lst):
@@ -83,10 +77,7 @@ def count_list(lst):
     4
     """
 
-    if not lst:
-        return 0
-
-    return 1 + count_list(lst[1:])
+    pass
 
 
 def sum_list(lst):
@@ -99,10 +90,7 @@ def sum_list(lst):
     165
     """
 
-    if not lst:
-        return 0
-
-    return lst[0] + sum_list(lst[1:])
+    pass
 
 
 def reverse(lst):
@@ -115,10 +103,7 @@ def reverse(lst):
     []
     """
 
-    if not lst:
-        return []
-
-    return [lst[-1]] + reverse(lst[0:-1])
+    pass
 
 
 def fibonacci(n):
@@ -158,13 +143,7 @@ def fibonacci(n):
     34
     """
 
-    if n < 1:
-        return 0
-    
-    if n == 1:
-        return 1
-
-    return fibonacci(n - 1) + fibonacci(n - 2)
+    pass
 
 
 def find(lst, i):
@@ -183,13 +162,7 @@ def find(lst, i):
     >>> find(["a", "b", "c"], "d")
     """
 
-    if not lst:
-        return None
-
-    if lst[0] == i:
-        return i
-
-    return find(lst[1:], i)
+    pass
 
 
 def is_palindrome(some_string):
@@ -216,13 +189,7 @@ def is_palindrome(some_string):
     False
     """
 
-    if not some_string:
-        return True
-
-    if some_string[0] != some_string[-1]:
-        return False
-
-    return is_palindrome(some_string[1:-1])
+    pass
 
 
 def fold_paper(width, height, folds):
@@ -260,14 +227,7 @@ def fold_paper(width, height, folds):
     (5.0, 10.0)
     """
 
-    if folds == 0:
-        return float(width), float(height)
-
-    if width >= height:
-        return fold_paper(width / 2.0, height, folds - 1)
-
-    else:
-        return fold_paper(width, height / 2.0, folds - 1)
+    pass
 
 
 def count_up(n, target):
@@ -296,11 +256,7 @@ def count_up(n, target):
     >>> count_up(1, 0)
     """
 
-    if n > target:
-        return
-
-    print n
-    count_up(n + 1, target)
+    pass
 
 
 ###########################################################################################
