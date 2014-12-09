@@ -1,0 +1,24 @@
+#sent-result {
+    margin-top: 1em;
+    display: none;
+}
+
+h1 {
+    color: purple;
+}
+
+
+
+#message-clear {
+    float: right;
+    /*position: absolute;*/
+    margin-left: 50px;
+    height: 75%;
+    /*background-color: #9C3027;*/
+}
+
+.panel-title {
+    display: inline-block;
+    overflow: hidden;
+}
+

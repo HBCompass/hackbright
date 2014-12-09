@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+    <form class="log-in-form" method="POST">
+        <div class="form-group"><label for="email">Email:</label>
+        <input type = "email" class="form-control" name="email" id="email" placeholder="Enter email"/></div>
+
+        <div class="form-group"><label for="password">Password:</label>
+        <input type = "password" class="form-control" name="password" id="password" placeholder="Enter password"/></div>
+
+        <div class="form-group"><input class="btn btn-default" type="submit" value="Submit" id="login-submit"></div>
+    </form>
+
+    <p id="sign-up-link">Don't have a login yet? Sign up <a href="/signup">here</a></p>
+    
+{% endblock %}

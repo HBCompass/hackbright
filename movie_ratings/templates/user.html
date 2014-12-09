@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="movie">
+
+<h3> User movie list</h3>
+    
+{% for rating in user_ratings %}
+
+<div><a href="/ratemovie/{{ rating.movie_id }}">{{ rating.movie.movie_title }}</a>    {{ rating.rating }}</div>
+
+<!-- /rate/<50:id> -->
+
+{% endfor %}
+</div>
+
+{% endblock %}

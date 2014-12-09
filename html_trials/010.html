@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            div#right{
+                background-color: #cccccc;
+                width: 300px;
+                height: 175px;
+                position: absolute;
+                margin-left: 320px;
+                padding: 5px;
+            }
+            div#left{
+                background-color: #cccccc;
+                width: 300px;
+                height: 200px;
+                padding:5px;
+                padding-left: 10px;
+            }
+            label{
+                display: inline-block;
+                width: 115px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Columns!</h1>
+        <div id="right">
+            <form action="/">
+                <div>
+                    <label  for="name">Name</label>
+                    <input type="text" name="name"></input>
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="text" name="age"></input>
+                </div>
+                <div>
+                    <label for="color">Favorite Color</label>
+                    <select name="color">
+                        <option value="Magenta">Magenta</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Fuchsia">Fuchsia</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="music">Love Music</label>
+                    <input type="radio" name="music" value="Love Music">
+                </div>
+                <div>
+                    <label for="music">Hate Music</label>
+                    <input type="radio" name="music" value="Hate Music">
+                </div>
+                <div>
+                    <label for="raining">Is it raining?</label>
+                    <input type="checkbox" name="raining"></input><br>
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+        <div id="left">
+            <h2>Here is a list of things.</h2>
+            <ul>
+                <li>Banana.</li>
+                <li>Rabbit holes.</li>
+                <li>John Quincy Adams</li>
+                <li>A sea serpent.</li>
+            </ul>
+        </div>
+    </body>
+</html>

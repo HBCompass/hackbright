@@ -1,0 +1,22 @@
+
+.flashes{
+    display: inline-block;
+}
+
+.log-in-form{
+    padding-left: 50px;
+    width: 50%;
+}
+
+.sign-up-form{
+    padding-left: 50px;
+    width: 50%;
+}
+
+#sign-up-link{
+    padding-left: 50px;
+}
+
+.movie{
+    padding-left: 50px;
+}

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            label{
+                display: inline-block;
+                width: 115px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The Fanciest Form</h1>
+        <div id="container">
+            <form action="/">
+                <div>
+                    <label  for="name">Name</label>
+                    <input type="text" name="name"></input>
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="text" name="age"></input>
+                </div>
+                <div>
+                    <label for="color">Favorite Color</label>
+                    <select name="color">
+                        <option value="Magenta">Magenta</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Fuchsia">Fuchsia</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="music">Love Music</label>
+                    <input type="radio" name="music" value="Love Music">
+                </div>
+                <div>
+                    <label for="music">Hate Music</label>
+                    <input type="radio" name="music" value="Hate Music">
+                </div>
+                <div>
+                    <label for="raining">Is it raining?</label>
+                    <input type="checkbox" name="raining"></input><br>
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

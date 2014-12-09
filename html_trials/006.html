@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0px;
+            }
+            div.vertical{
+                height: 200px;
+                width: 400px;
+                display: inline-block;
+            }
+            div#top{
+                background-color: #ff0000;
+            }
+            div#bottom{
+                background-color: blue;
+            }
+            div.boxleft{
+                height: 100px;
+                width: 100px;
+                background-color: black;
+                display: inline-block;
+                margin: 50px 25px 50px 75px;
+            }
+            div.boxright{
+                height: 100px;
+                width: 100px;
+                background-color: black;
+                display: inline-block;
+                margin: 50px 50px 50px 25px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="top" class="vertical"><div class="boxleft"></div><div class="boxright"></div></div><div id="bottom" class="vertical"><div class="boxleft"></div><div class="boxright"></div>
+        </div>
+    </body>
+</html>

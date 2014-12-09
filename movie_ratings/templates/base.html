@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/rating_app.css" />
+
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <img src=""><a class="navbar-brand" href="/">Ratings App</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                            {% if g.logged_in %}
+                            <li> <a href="/logout">Log Out</a></li> 
+                            {% else %}
+                            <li><a href="/login">Log In</a></li>
+                            {% endif %} 
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flashes">
+                {% for message in messages %}
+                    <div class="alert alert-info" role="alert">{{ message }}</div>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        <!-- {% if g.logged_in %}
+        <form action="/logout" method="get">
+        <button type="submit" style="float:right" name ="logout" id="logout">Log out</button>
+        </form>
+        {% endif %} 
+ -->
+    
+    </head>
+    <body>
+
+
+        {% block body %}
+        {% endblock %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="/static/movies.js"></script> 
+    </body>
+</html>

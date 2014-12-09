@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Message Wall</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="/static/css/bootstrap-3.2.0.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="/static/css/wall.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-12 page-header">
+      <h1>
+        <span class="glyphicon glyphicon-star"></span>
+        Message Wall
+      </h1>
+
+      <p class="lead">Send messages to our server and get updates here.</p>
+    </div>
+
+    <div class="col-xs-12 col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <span class="glyphicon glyphicon-pencil"></span>
+            Send Message
+          </h3>
+        </div>
+        <div class="panel-body">
+          <form role="form" id="message-form">
+            <div class="form-group">
+              <textarea class="form-control" name="m" id="message"
+                        placeholder="Enter message"></textarea>
+            </div>
+            <button id="message-send" type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </form>
+
+          <p id="sent-result" class="alert alert-success"></p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <span class="glyphicon glyphicon-list-alt"></span>
+            Messages
+          </h3>
+          <button id="message-clear" class="btn btn-danger btn-xs">
+              Clear
+          </button>
+        </div>
+        <div class="panel-body">
+          <ul class="list-group" id="message-container">
+
+            <!-- <li class="list-group-item">Placeholder message #1</li> -->
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row -->
+</div>
+<!-- /.container -->
+
+<script src="/static/js/jquery-1.11.0.min.js"></script>
+<!-- jQuery v1.11.0 -->
+<script src="/static/js/bootstrap-3.2.0.min.js"></script>
+<!-- Bootstrap's JS -->
+<script src="/static/js/wall.js"></script>
+<!-- Message Wall JS -->
+
+</body>
+
+</html>

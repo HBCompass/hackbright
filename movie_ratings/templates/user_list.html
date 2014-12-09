@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="movie">
+{% for user in users %}
+<a href="/user/{{ user.id }}"><h3>User {{ user.id }}, age {{ user.age }} has {{ user.ratings|length }} ratings</h3></a>
+{% endfor %}
+</div>
+{% endblock %}
