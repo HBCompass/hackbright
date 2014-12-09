@@ -1,0 +1,265 @@
+(lp0
+(dp1
+S'instruction'
+p2
+S"The 'SELECT' is the basic query. We use it to extract information from a\ntable. There are a number of clauses to a select statement. Right now, we'll\nconcern ourself with just two: the column list and the table you are querying.\n\nThe format of the basic select statement is\n\n    SELECT <column list> FROM <table name>;\n\nFor now, we can use the wildcard '*' (without quotes) to select all columns\nfrom a given table.\n\nExamples: http://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial -- 1\n\nTask: Write a query that shows all the information about all the salespeople in\nthe database. Use a basic SELECT query.\n"
+p3
+sS'soln_hash'
+p4
+S'121edce7766312b0847b6d2865caaf0e'
+p5
+sS'hint'
+p6
+S"Select all the columns from the 'salespeople' table."
+p7
+sa(dp8
+g2
+S"Select statements can have an additional clause called the 'where' clause.\nThis lets us extract specific rows out of our table. Our where clause can be\nspecific enough to match a single row, or general enough to match a set of\nrows. The format of a select statement with a 'where' clause is:\n\n    SELECT <column list> FROM <table name> WHERE <equality expression>;\n\nExamples: http://sqlzoo.net/wiki/SELECT_basics -- 1\n\nTask: Write a query that shows all the information about all salespeople from\nthe 'Northwest' region.\n"
+p9
+sg4
+S'724a00154931048677299a19ccd66aed'
+p10
+sg6
+S"Select all the columns from the 'salespeople' table where the region\nmatches the string 'Northwest'."
+p11
+sa(dp12
+g2
+S"We've been selecting all the columns out of our table up until now, but the\namount of data can be overwhelming. We can use the column list to specify\nindividual columns. We do this by specifying the column list as a single column\nname instead of a '*'.\n\nExamples: http://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial -- 1\n\nTask: Write a query that shows just the emails of the salespeople from the\n'Southwest' region.\n"
+p13
+sg4
+S'582d32441522fc6c1a90494cd84f6f8f'
+p14
+sg6
+S"Select the email column from the 'salespeople' table where the\nregion matches the string 'Southwest'."
+p15
+sa(dp16
+g2
+S"We can ask for more than one column from the data set by specifying all the\ncolumns separated by commas.\n\nExamples: http://sqlzoo.net/wiki/SELECT_from_Nobel_Tutorial -- 1, 2\n          http://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial -- 1\n\nTask: Write a query that shows the given name, surname, and email of all\nsalespeople in the 'Northwest' region.\n"
+p17
+sg4
+S'bb41bfa229857e45aae193ae1b224421'
+p18
+sg6
+S"Select the givenname, surname, and email column from the\n'salespeople' table where the region matches the string 'Northwest'."
+p19
+sa(dp20
+g2
+S'In addition to finding exact matches, we can specify the where clause of our\nquery to match a range of columns using inequalities.\n\nExamples: http://sqlzoo.net/wiki/SELECT_basics -- 2, 3\n          http://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial -- 2\n\nTask: Write a query that shows the common name of melons that cost more than\n$5.00.\n'
+p21
+sg4
+S'ed59dfd51a489a75db856b38a03ca686'
+p22
+sg6
+S"Select the common_name column from the 'melons' table where the\nprice column is greater than 5.0."
+p23
+sa(dp24
+g2
+S"Sometimes, we want to filter down our matched rows even further. We can add\nadditional restrictions to our query using an 'and' clause. It looks like this:\n\n    SELECT <column list> FROM <table> WHERE <expression 1> AND <expression 2>;\n\nExamples: http://sqlzoo.net/wiki/SELECT_basics -- 3, 6\n\nTask: Write a query that shows the melon type and common name for all\nwatermelons that cost more than $5.00.\n"
+p25
+sg4
+S'c7de1defbf33d3f6585c5f02e210fb86'
+p26
+sg6
+S"Select the melon_type and common_name columns from the 'melons'\ntable where the price is greater than or equal to 5.0 and the melon_type is\n'Watermelon'. "
+p27
+sa(dp28
+g2
+S'Using inequalities on numeric columns lets us match a range of rows.\nSimilarly, we can use a string wildcard to do matches on ranges of strings.\nConfusingly, the string wildcard is \'%\', which is different from the column\nwildcard, which is \'*\'. Additionally, you can\'t use an equality to match a\nstring wildcard, you have to use a \'like\' clause instead. The format is as\nfollows:\n\n    <column_name> LIKE "<match string with wildcards>"\n    \nExamples: http://sqlzoo.net/wiki/SELECT_basics -- 5\n\nTask: Write a query that displays all common names of melons that start with\nthe letter \'C\'.\n'
+p29
+sg4
+S'a7285fc178618a53e1ea6d2beab8b9d6'
+p30
+sg6
+S"Select the common_name column from the 'melons' table where the\ncommon name is like the letter 'C' followed by a wildcard."
+p31
+sa(dp32
+g2
+S"String wildcards can be places anywhere in a string, allowing you to match\ncomplex patterns. For example, the string pattern 'W%termelon%' matches the\nstrings 'Watermelon', 'Wintermelon', 'Watermelons', and 'Wintermelons'.\n    \nExamples: http://sqlzoo.net/wiki/SELECT_basics -- 5\n\nTask: Write a query that shows the common name of any melon with 'Golden'\nanywhere in the common name.\n"
+p33
+sg4
+S'620b2d0239ac7107bba1f64c8bbd70ac'
+p34
+sg6
+S"Select the common_name column from the 'melons' table where the\ncommon name is like the word 'Golden', surrounded on either side by a\nwildcard."
+p35
+sa(dp36
+g2
+S"Frequently, you will encounter duplicate data across multiple rows. In our\nsalespeople table schema, we can see that each one is attached to a specific\n'region'. If we query that table for all the different regions that are used,\nsql will return duplicates, one for each salesperson in our table.\n\nTo counter this, we can use the 'distinct' keyword. In our column list, we can\nprepend the keyword to the column name.\n\nExamples: http://sqlzoo.net/wiki/Using_SUM,_Count,_MAX,_DISTINCT_and_ORDER_BY -- 2\n          http://sqlzoo.net/wiki/SUM_and_COUNT -- 2\n\nTask: Write a query that shows all the distinct regions that a salesperson can belong to.\n"
+p37
+sg4
+S'49533da344f3983e407edd084c016509'
+p38
+sg6
+S"Select the distinct entries in the region column from the 'salespeople' table. "
+p39
+sa(dp40
+g2
+S"Earlier, we used the 'and' keyword to narrow down our query: we made our\nsearch more specific. We can use the 'or' keyword in exactly the opposite way,\nto make our search match more rows.\n\nExample: http://sqlzoo.net/wiki/SELECT_basics -- 6\n\nTask: Write a query that shows the emails of all salespeople from both the\nNorthwest and Southwest regions.\n"
+p41
+sg4
+S'c2d6f0904b17bb31b4757d2e081fbf23'
+p42
+sg6
+S"Select the email column from the 'salespeople' table where the\nregion is either 'Northwest' or 'Southwest'. Use the 'or' clause to do\nthat."
+p43
+sa(dp44
+g2
+S"It can be tedious to match a single column against multiple options. In our\nprevious exercise, we searched for the region to match both 'Northwest' and\n'Southwest'. If we had more options we were trying to match, this would make\nour query very long. We can use an 'in' clause to write this kind of query more\nsuccinctly. We can replaces a series of 'or' clauses with a single 'in' clause\nthat takes the following format:\n\n    <column name> IN (<option1>, <option2>, <...>)\n\nExample: http://sqlzoo.net/wiki/SELECT_basics -- 4\n    \nTask: Write a query that shows the emails of all salespeople from both the\nNorthwest and Southwest regions, this time using an 'IN' clause.  \n"
+p45
+sg4
+S'c2d6f0904b17bb31b4757d2e081fbf23'
+p46
+sg6
+S"Select the email column from the 'salespeople' table where the\nregion is in the list of 'Northwest' and 'Southwest'. Use the 'in' clause."
+p47
+sa(dp48
+g2
+S"Using all these tools, we can bring them together to do fairly complex\nqueries that match many different rows. Using what you've learned, write a\nquery that combines column selection, an 'in' clause, and string wildcards.\n\nTask: Write a query that shows the email, given name, and surname of all\nsalespeople in either the Northwest or Southwest regions whose surnames start\nwith the letter 'M'.\n"
+p49
+sg4
+S'5672933d2b74df5d5b9e03bbc0c9999b'
+p50
+sg6
+S"Select the email, givenname, and surname column from the\n'salespeople' table where the region is in the list of 'Northwest', and\n'Southwest', and where the surname matches the character 'M' followed by a\nwildcard."
+p51
+sa(dp52
+g2
+S"An odd feature of sql is the ability to select data out of a\ntable that doesn't actually exist. Certain kinds of data can be computed on the\nfly and be made to look as if they were part of the table. We'll use this to\nquery for melon price in USD and EUR, where one column will be computed from\nthe other.\n\nExamples: http://sqlzoo.net/wiki/SELECT_basics -- 2\n\nTask: Write a query that shows the melon type, common name, price, and the\nprice of the melon given in euros. The 'melons' table has prices in dollars,\nand the dollar to euro conversion rate is 0.735693.\n"
+p53
+sg4
+S'cb26a99fce544cf9f75aa58f9be466c2'
+p54
+sg6
+S"Select the melon_type, common_name, price, and a computed column\nwhich is the price multiplied by the value .735693 from the table 'melons'."
+p55
+sa(dp56
+g2
+S"Similar to the 'computed' columns, SQL has a set of predefined 'aggregate'\nfunctions that operate on an entire set of matched rows. Aggregate functions\ncondense a set of rows into a single row. An example of this kind of aggregate\noperation is a 'count'. It simply counts up all the matched rows and returns a\nsingle record in their place.\n\nExample: http://sqlzoo.net/wiki/The_nobel_table_can_be_used_to_practice_more_SUM_and_COUNT_functions. -- 1\n\nTask: Write a query that shows the total number of customers in our customer\ntable.\n"
+p57
+sg4
+S'a9b7ba70783b617e9998dc4dd82eb3c5'
+p58
+sg6
+S"Select the count of all the columns from the table 'customers'. "
+p59
+sa(dp60
+g2
+S"We can combine aggregate functions with the standard SQL clauses we've seen\nso far. In this exercise, you will combine a count clause with a where clause\nto limit what is counted.\n\nTask: Write a query that counts the number of orders shipped to California.\n"
+p61
+sg4
+S'31fefc0e570cb3860f2a6d4b38c6490d'
+p62
+sg6
+S"Select the count of all the columns from the table 'orders' where\nthe shipto_state is 'CA'."
+p63
+sa(dp64
+g2
+S"Aggregate functions work on column lists. When we're counting things, it\ndoesn't matter which column we count, there should be the same number of each\ncolumn across all the records. For this reason, it is customary to execute the\ncount on all the columns in the query. With other aggregate functions, the\ncolumn we use can be meaningful, for example, if we are totaling up the values\nin a single column.\n\nExamples: http://sqlzoo.net/wiki/SUM_and_COUNT -- 1\n          http://sqlzoo.net/wiki/The_nobel_table_can_be_used_to_practice_more_SUM_and_COUNT_functions. -- 3\n\nTask: Write a query that shows the total amount of money spent across all melon\norders.\n"
+p65
+sg4
+S'8f1568c5afe53e061cbbfac1af099a8d'
+p66
+sg6
+S"Select the sum of the order_total column from the table 'orders'."
+p67
+sa(dp68
+g2
+S'Another useful aggregate function is the average.\n\nTask: Write a query that shows the average order cost.'
+p69
+sg4
+S'c055e268b67fb3e730a378c75856cd0b'
+p70
+sg6
+S"Select the average of the order_total from the table 'orders'."
+p71
+sa(dp72
+g2
+S'Lastly, we have aggregate functions to select both the minimum or maximum values of a column.\n\nTask: Write a query that shows the order total that was lowest in price.'
+p73
+sg4
+S'a12ea0920ffc4f559ebc8d429ebd6aeb'
+p74
+sg6
+S"Select the minimum of the order_total from the table 'orders'. "
+p75
+sa(dp76
+g2
+S"Now, for a change of pace, we're going to try to write queries that can show us information that spans multiple tables. Before we can do that though, a quick review.\n\nTask: Write a query that fetches the id of the customer whose email is 'phyllis@demizz.edu'.\n"
+p77
+sg4
+S'f899139df5e1059396431415e770c6dd'
+p78
+sg6
+S"Select the id column from the 'customers' table where the email matches the string 'phyllis@demizz.edu'"
+p79
+sa(dp80
+g2
+S"We've identified Phyllis in our previous exercise to be customer number 100.\n\nTask: Write a query that shows the id, status and order_total for all orders made by customer 100.\n"
+p81
+sg4
+S'dffe354f4283b0b6b75e369c3a8f76b9'
+p82
+sg6
+S'Select the id, status, and order_total columns from the `orders` table where the customer id is 100.'
+p83
+sa(dp84
+g2
+S"Our first technique for writing queries that cross tables is the subselect.\nIt lets us use the results of a query in the where clause of another query. In\nthis case, we can query the 'orders' table for orders matching the 'id' that\ncomes out of a different query. In this way, we can combine the previous two\nqueries into a single query.\n\nExamples: http://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial -- 1\n\nTask: Write a single query that shows the id, status, and order total for all\norders made by 'phyllis@demizz.edu'. Use a subselect to do this.\n"
+p85
+sg4
+S'dffe354f4283b0b6b75e369c3a8f76b9'
+p86
+sg6
+S"Select the id, status, and order_total columns from the 'orders'\ntable where the customer id matches the result from a subselect that queries\nfor the id column from the 'customers' table where the email matches the string\n'phyllis@demizz.edu'."
+p87
+sa(dp88
+g2
+S"Another way we can span tables is the 'join'. Joins can be complicated, but\none way to visualize them is as a venn diagram. Imagine you have a query that\nselects all the customers in the customer table, and another query that selects\nall the orders in the orders table. You can treat these two queries as the two\ncircles in a venn diagram. The intersection of these two sets, then, is all the\norders, attached to their respective customers.\n\nUsing a join, we can get the same results as the previous query by connecting\norders to the customers that made them, then filtering on the email of the\nresulting join.\n\nExamples: http://sqlzoo.net/wiki/The_JOIN_operation -- 1, 2, 3, 4\n\nTask: Write a query that shows the id, status, and order total for all orders\nmade by 'phyllis@demizz.edu'. Use a join to do this.\n"
+p89
+sg4
+S'dffe354f4283b0b6b75e369c3a8f76b9'
+p90
+sg6
+S"Select the id, status, and order_total columns from the 'orders' table joined with the 'customers' table using the customer_id to line the two tables up. Use a where clause to limit the rows to only those that match 'phyliss@demizz.edu'.\n"
+p91
+sa(dp92
+g2
+S"We're going to practice more joins. The question we'll eventually answer is,\n'can you show me all the details of the melons attached to a particular order?'\nWe will, but first, we need to understand how our data is organized. We have a\ntable called 'order_items'. This table includes information about all the items\nin a given order. You can think of this table as representing a 'shopping cart'\nof an order.\n\nWe'll start by querying for just half of the information we want: which melons\nwere present in a given order.\n\nTask: Write a query that shows all the melons, quantity, price, all columns\nthat were attached to order #2725.\n"
+p93
+sg4
+S'f6ec6d557943f0084927ba5f2ba27f12'
+p94
+sg6
+S"Select all columns from the 'order_items' table where the order_id is equal to 2725."
+p95
+sa(dp96
+g2
+S"Now, in addition to all the pricing information, we'll join the\n'order_items' table to the 'melons' table to show all the information about the\nmelons in any given order.\n\nTask: Write a query that shows the common_name, melon_type, quantity,\nunit_price and total_price for all the melons in order #2725.\n"
+p97
+sg4
+S'951cbd857c721af89be0a6b707c2acef'
+p98
+sg6
+S"Select the common_name and melon_type from the 'melons' table, left\njoined to the quantity, unit_price, and total_price from the 'order_items'\ntable, using the melon_id to line up the two tables. Limit the results to only\nthe items present in order #2725."
+p99
+sa(dp100
+g2
+S"In our system, an order can be attached to a salesperson in order to give\nthem commission. However, some orders come in from the web, which means some\norders have no salesperson. This is indicated in our table by having the\nsalesperson id be 'NULL', similar to python's 'None'.\n\nTask: Write a query that shows the total amount of revenue that comes from\ninternet orders."
+p101
+sg4
+S'1cfc9f999c0827e40bc48ea91657526d'
+p102
+sg6
+S"Select the sum of the order_total column from the 'orders' table\nwhere the salesperson_id is null."
+p103
+sa(dp104
+g2
+S"\nChallenge: Produce a list of all salespeople and the total amount of orders\nthey've sold, while calculating a 15% commission on all of their orders.\nInclude their given name, surname, the total of all their sales, and their\ncommission. Only report one row per salesperson. Include salespeople who have\nnot made any sales.\n\nYou will need 'left join' (http://sqlzoo.net/wiki/LEFT_JOIN) and 'group by'\n(http://sqlzoo.net/wiki/SELECT_.._GROUP_BY) clauses to finish this one.\n"
+p105
+sg4
+S'734fcd21e88280e27f150f10deb73841'
+p106
+sg6
+S"Select the givenname, surname, the sum of the order_total, and the\nsum of the order_total multiplied by .15 from the table 'salespeople' joined on\nthe 'orders' table, matching the salesperson_id on the order to the id column\nfrom the 'salespeople' table. Group the results by the id from the salespeople\ntable."
+p107
+sa.
